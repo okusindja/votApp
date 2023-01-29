@@ -1,0 +1,20 @@
+{
+  "name": "vot-app",
+  "version": "1.0.0",
+  "description": "most secure voting platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "vote",
+    "voting",
+    "poll"
+  ],
+  "author": "Okusindja de Almeida & Marcelo Bastos",
+  "license": "ISC",
+  "dependencies": {
+    "face-api.js": "^0.22.2",
+    "qrcode": "^1.5.1"
+  }
+}

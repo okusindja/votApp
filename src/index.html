@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background main">
+      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <div class="body">
+        <p class="greetings">Seja Bem-vindo, cara eleitor</p>
+      </div>
+      <div>
+        <button class="start">Votar</button>
+      </div>
+    </div>
+    <div class="background background--hidden qrcode">
+      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <p class="greetings">Leitura de documento identificador</p>
+      <div class="qr"><img src="./assets/img/qrcode.svg" alt="logo" /></div>
+      <div class="body"></div>
+      <div></div>
+    </div>
+    <div class="background background--hidden data-confirmation">
+      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <p class="greetings">Confirmar Dados</p>
+      <div class="confirmation-body">
+        <div class="confirmation-body__informations">
+          <img src="./assets/img/tabler_face-id.svg" alt="logo" />
+          <div class="infortmations__texts">
+            <p class="name">Diangana P.</p>
+            <p class="id">BI: 00238993LA328</p>
+            <p class="address">Endereço: Bairro Cazenga, Cunene</p>
+          </div>
+        </div>
+        <div class="informations__buttons">
+          <button class="retry-button">Novamente</button>
+          <button class="confirm-button">Confirmar</button>
+        </div>
+      </div>
+      <div class="body"></div>
+      <div></div>
+    </div>
+    <div class="background background--hidden data-confirmation__end">
+      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <p class="greetings">Confirmar Dados</p>
+      <div class="confirmation-body">
+        <div class="confirmation-body__informations">
+          <div
+            class="infortmations__texts"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img
+              style="margin-right: 0"
+              src="./assets/img/tabler_face-id.svg"
+              alt="logo"
+            />
+            <p style="width: 300px; text-align: center">
+              Por favor, posicione o seu rosto na câmera acima. Precisaremos de
+              fazer um reconhecimento facial para última validação de
+              identidade.
+            </p>
+          </div>
+        </div>
+        <div class="informations__buttons">
+          <button class="confirm-button">Confirmar</button>
+        </div>
+      </div>
+      <div class="body"></div>
+      <div></div>
+    </div>
+    <div class="background background--hidden facescan">
+      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <p class="greetings">Leitura de documento identificador</p>
+      <div class="facescan-img">
+        <img src="./assets/img/face-scan.svg" alt="logo" />
+      </div>
+      <div class="body"></div>
+      <div></div>
+    </div>
+    <div class="background background--hidden data-confirmation__end">
+      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <p class="greetings">Reconhecimento facial feito!</p>
+      <div class="confirmation-body">
+        <div class="confirmation-body__informations" style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 150px;
+              margin: 0 auto 2rem;
+            ">
+            <img
+              style="margin: 0; width: 100%;"
+              src="./assets/img/tabler_face-id--green.svg"
+              alt="logo"
+            />
+          </div>
+          <div class="informations__buttons">
+            <button class="confirm-button">Confirmar</button>
+          </div>
+        </div>
+      </div>
+      <div class="body"></div>
+      <div></div>
+    </div>
+  </body>
+  <script type="module" src="main.js"></script>
+</html>
