@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="background main">
-      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <div class="logo"><img src="../assets/img/logo.svg" alt="logo" /></div>
       <div class="body">
         <p class="greetings">Seja Bem-vindo, cara eleitor</p>
       </div>
@@ -18,34 +18,35 @@
       </div>
     </div>
     <div class="background background--hidden qrcode">
-      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <div class="logo"><img src="../assets/img/logo.svg" alt="logo" /></div>
       <p class="greetings">Leitura de documento identificador</p>
-      <div class="qr"><img src="./assets/img/qrcode.svg" alt="logo" /></div>
-      <div class="body"></div>
-      <div></div>
+      <video id="preview" width="400" height="400"></video>
     </div>
+
+    <!--BI data confirmation START-->
     <div class="background background--hidden data-confirmation">
-      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <div class="logo"><img src="../assets/img/logo.svg" alt="logo" /></div>
       <p class="greetings">Confirmar Dados</p>
       <div class="confirmation-body">
         <div class="confirmation-body__informations">
-          <img src="./assets/img/tabler_face-id.svg" alt="logo" />
+          <img src="../assets/img/tabler_face-id.svg" alt="logo" />
           <div class="infortmations__texts">
-            <p class="name">Diangana P.</p>
-            <p class="id">BI: 00238993LA328</p>
-            <p class="address">Endereço: Bairro Cazenga, Cunene</p>
+            <p class="name"></p>
+            <p class="id"></p>
+            <p class="address"></p>
           </div>
         </div>
         <div class="informations__buttons">
-          <button class="retry-button">Novamente</button>
-          <button class="confirm-button">Confirmar</button>
+          <button class="button--confirm-button">Confirmar</button>
         </div>
       </div>
       <div class="body"></div>
       <div></div>
     </div>
+    <!--BI data confirmation END-->
+
     <div class="background background--hidden data-confirmation__end">
-      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <div class="logo"><img src="../assets/img/logo.svg" alt="logo" /></div>
       <p class="greetings">Confirmar Dados</p>
       <div class="confirmation-body">
         <div class="confirmation-body__informations">
@@ -60,7 +61,7 @@
           >
             <img
               style="margin-right: 0"
-              src="./assets/img/tabler_face-id.svg"
+              src="../assets/img/tabler_face-id.svg"
               alt="logo"
             />
             <p style="width: 300px; text-align: center">
@@ -78,16 +79,16 @@
       <div></div>
     </div>
     <div class="background background--hidden facescan">
-      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+      <div class="logo"><img src="../assets/img/logo.svg" alt="logo" /></div>
       <p class="greetings">Leitura de documento identificador</p>
       <div class="facescan-img">
-        <img src="./assets/img/face-scan.svg" alt="logo" />
+        <video id="video" width="400" height="400" muted></video>
       </div>
       <div class="body"></div>
       <div></div>
     </div>
-    <div class="background background--hidden data-confirmation__end">
-      <div class="logo"><img src="./assets/img/logo.svg" alt="logo" /></div>
+    <div class="background background--hidden data-confirmation__end--to-vote">
+      <div class="logo"><img src="../assets/img/logo.svg" alt="logo" /></div>
       <p class="greetings">Reconhecimento facial feito!</p>
       <div class="confirmation-body">
         <div class="confirmation-body__informations" style="
@@ -100,18 +101,30 @@
             ">
             <img
               style="margin: 0; width: 100%;"
-              src="./assets/img/tabler_face-id--green.svg"
+              src="../assets/img/tabler_face-id--green.svg"
               alt="logo"
             />
           </div>
           <div class="informations__buttons">
-            <button class="confirm-button">Confirmar</button>
+            <button class="button--confirm-button">Confirmar</button>
+          </div>
+        </div>
+    </div>
+    <div class="background background--hidden choices">
+      <div class="logo"><img src="../assets/img/logo.svg" alt="logo" /></div>
+      <div class="confirmation-body__informations">
+        <p class="greetings last">Voto efectuado com sucesso! Candidato:</p>
+        <div class="choices__container">
+          <div class="choices__presidents">
+            <div class="president"></div>
           </div>
         </div>
       </div>
-      <div class="body"></div>
-      <div></div>
     </div>
   </body>
-  <script type="module" src="main.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/libs/facescan/face-api.min.js"></script>
+
 </html>

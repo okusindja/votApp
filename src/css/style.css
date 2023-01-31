@@ -31,12 +31,16 @@ button {
   font-weight: bold;
 }
 
-.body {
+.last {
+  display: none;
+  margin-top: -10rem;
 }
 
 .background.qrcode,
 .data-confirmation,
 .data-confirmation__end,
+.data-confirmation__end--to-vote,
+.choices,
 .facescan {
   display: none;
 }
@@ -68,12 +72,12 @@ button {
   flex: 1;
 }
 
-.informations__buttons .confirm-button {
+.informations__buttons .button--confirm-button{
   background-color: #79d09f;
   color: #178447;
 }
 
-.informations__buttons .retry-button {
+.informations__buttons .button--retry-button {
   background-color: #ecd985;
   color: #a89027;
 }
@@ -84,4 +88,65 @@ button {
 
 .facescan img {
   width: 400px;
+}
+
+.choices .confirmation-body__informations {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.choices__container {
+  display: flex;
+  padding: 1rem;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.choices__presidents {
+  display: flex;
+  width: 800px;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
+  column-gap: 3rem;
+  justify-content: space-between;
+}
+
+.president__number {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.president{
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  flex: 1;
+}
+
+.president__photo {
+  width: 80px;
+}
+
+.president__photo img {
+  width: 100%;
+}
+
+.president__name {
+  margin: 0;
+}
+
+.president__informations__party {
+  display: flex;
+  align-items: center;
+}
+
+.president__informations__party img {
+  width: 60px;
+  margin-right: 1rem;
+}
+
+canvas {
+  position: absolute;
+  z-index: 3;
 }

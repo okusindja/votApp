@@ -1,0 +1,83 @@
+{
+    "voters": [
+        {
+            "id": "1",
+            "bi": "004313899LA381",
+            "name": "Leandro Marques",
+            "address": "Angola, Luanda, Catambor",
+            "phone": "924244212"
+        },
+        {
+            "id": "2",
+            "bi": "004294099LA291",
+            "name": "Luís Alexandre",
+            "address": "Angola, Luanda, Nova vida",
+            "phone": "924344212"
+        },
+        {
+            "id": "3",
+            "bi": "004290199LA381",
+            "name": "Romeno do Rosário",
+            "address": "Angola, Luanda, Nova vida",
+            "phone": "921244212"
+        },
+        {
+            "id": "4",
+            "bi": "004313092LB470",
+            "name": "Marco Aurélio",
+            "address": "Angola, Luanda, Talatona",
+            "phone": "921241212"
+        },
+        {
+            "id": "5",
+            "bi": "004193826LA301",
+            "name": "Diangana Fortuna",
+            "address": "Angola, Luanda, Nova vida",
+            "phone": "921210212"
+        }
+    ],
+    "presidents": [
+        {
+            "id": "1",
+            "name": "Kassidy Lima",
+            "photo": "/assets/img/president.svg",
+            "flag": "/assets/img/party.svg",
+            "party": "Partido de direita"
+        },
+        {
+            "id": "2",
+            "name": "Raul Carvalho",
+            "photo": "/assets/img/president3.svg",
+            "flag": "/assets/img/party.svg",
+            "party": "Partido mundano"
+        },
+        {
+            "id": "3",
+            "name": "Luiz Miguel Moreira",
+            "photo": "/assets/img/president2.svg",
+            "flag": "/assets/img/party.svg",
+            "party": "Partido de libertação"
+        },
+        {
+            "id": "4",
+            "name": "Gustavo Barros",
+            "photo": "/assets/img/president5.svg",
+            "flag": "/assets/img/party.svg",
+            "party": "Partido festeiro"
+        },
+        {
+            "id": "5",
+            "name": "Stephany Caldeira",
+            "photo": "/assets/img/president6.svg",
+            "flag": "/assets/img/party.svg",
+            "party": "Partido teologista"
+        },
+        {
+            "id": "6",
+            "name": "Marco Aurélio",
+            "photo": "/assets/img/president4.svg",
+            "flag": "/assets/img/party.svg",
+            "party": "Partido de esquerda"
+        }
+    ]
+}
