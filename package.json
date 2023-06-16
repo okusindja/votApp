@@ -1,0 +1,22 @@
+{
+  "name": "vot-app",
+  "version": "1.0.0",
+  "description": "most secure voting platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "json": "json-server --watch ./src/mocks/data.json"
+  },
+  "keywords": [
+    "vote",
+    "voting",
+    "poll"
+  ],
+  "author": "Okusindja de Almeida",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.0",
+    "face-api.js": "^0.22.2",
+    "qrcode": "^1.5.1"
+  }
+}

@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  background-color: #91cbf1;
+  border: 0;
+  padding: 1rem 4rem;
+  border-radius: 7px;
+  color: white;
+}
+.background {
+  background: radial-gradient(#357fae, #122a3a);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 3rem;
+}
+
+.greetings {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.last {
+  display: none;
+  margin-top: -10rem;
+}
+
+/* .background.qrcode,
+.data-confirmation,
+.data-confirmation__end,
+.data-confirmation__end--to-vote,
+.choices,
+.facescan,
+.informations__buttons--hidden {
+  display: none;
+} */
+
+.confirmation-body {
+  background-color: #b6def633;
+  display: flex;
+  padding: 3rem;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.confirmation-body__informations {
+  display: flex;
+}
+
+.confirmation-body__informations img {
+  margin-right: 2rem;
+  width: 100px;
+}
+
+.informations__buttons {
+  display: flex;
+  margin-top: 1rem;
+  column-gap: 1rem;
+}
+
+.informations__buttons button {
+  flex: 1;
+}
+
+.informations__buttons .button--confirm-button{
+  background-color: #79d09f;
+  color: #178447;
+}
+
+.informations__buttons .button--retry-button {
+  background-color: #ecd985;
+  color: #a89027;
+}
+
+.qr img {
+  width: 200px;
+}
+
+.facescan img {
+  width: 400px;
+}
+
+.choices .confirmation-body__informations {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.choices__container {
+  display: flex;
+  padding: 1rem;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.choices__presidents {
+  display: flex;
+  width: 800px;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
+  column-gap: 3rem;
+  justify-content: space-between;
+}
+
+.president__number {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.president{
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  flex: 1;
+}
+
+.president__photo {
+  width: 80px;
+}
+
+.president__photo img {
+  width: 100%;
+}
+
+.president__name {
+  margin: 0;
+}
+
+.president__informations__party {
+  display: flex;
+  align-items: center;
+}
+
+.president__informations__party img {
+  width: 60px;
+  margin-right: 1rem;
+}
+
+canvas {
+  position: absolute;
+  z-index: 3;
+}
